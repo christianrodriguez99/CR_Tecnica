@@ -282,7 +282,8 @@
                 if (contenedores.All(x => x.TieneLugarParaUltimaCaja == false))
                 {
                     Console.WriteLine($"Carga no factible, no queda mas lugar o capacidad en ningun contenedor para cargar la caja");
-                    Console.WriteLine($"Se mostraran los resultados");
+                    Console.WriteLine($"Aprete una tecla para continuar");
+                    Console.ReadKey();
                     MostrarResultados(contenedores);
                 }
 
@@ -310,45 +311,49 @@
             }
 
             Console.ReadKey();
+            if (contenedores.All(x => x.TieneLugarParaUltimaCaja == false))
+            {
+                MostrarMenu(false);
+            }
         }
-    }
-    public class Caja
-    {
-        public override string ToString()
+        public class Caja
         {
-            return String.Format("NumeroCaja: {0}, Capacidad: {1}, Altura: {2}, Longitud: {3}, Ancho; {4}"
-                , NumeroCaja, Capacidad, Altura, Longitud, Ancho);
+            public override string ToString()
+            {
+                return String.Format("NumeroCaja: {0}, Capacidad: {1}, Altura: {2}, Longitud: {3}, Ancho; {4}"
+                    , NumeroCaja, Capacidad, Altura, Longitud, Ancho);
+            }
+            public int NumeroCaja { get; set; }
+            public double Capacidad { get; set; }
+            public double Altura { get; set; }
+            public double Longitud { get; set; }
+            public double Ancho { get; set; }
         }
-        public int NumeroCaja { get; set; }
-        public double Capacidad { get; set; }
-        public double Altura { get; set; }
-        public double Longitud { get; set; }
-        public double Ancho { get; set; }
-    }
 
-    public class Contenedor
-    {
-        public Contenedor(int numeroContenedor, double capacidad, double altura, double longitud, double ancho)
+        public class Contenedor
         {
-            NumeroContenedor = numeroContenedor;
-            Capacidad = capacidad;
-            Altura = altura;
-            Longitud = longitud;
-            Ancho = ancho;
-        }
-        public override string ToString()
-        {
-            return String.Format("NumeroContenedor: {0}, Capacidad: {1}, Altura: {2}, Longitud: {3}, Ancho; {4}"
-                , NumeroContenedor, Capacidad, Altura, Longitud, Ancho);
-        }
-        public int NumeroContenedor { get; set; }
-        public double Capacidad { get; set; }
-        public double Altura { get; set; }
-        public double Longitud { get; set; }
-        public double Ancho { get; set; }
-        public bool TieneLugarParaUltimaCaja { get; set; } = true;
+            public Contenedor(int numeroContenedor, double capacidad, double altura, double longitud, double ancho)
+            {
+                NumeroContenedor = numeroContenedor;
+                Capacidad = capacidad;
+                Altura = altura;
+                Longitud = longitud;
+                Ancho = ancho;
+            }
+            public override string ToString()
+            {
+                return String.Format("NumeroContenedor: {0}, Capacidad: {1}, Altura: {2}, Longitud: {3}, Ancho; {4}"
+                    , NumeroContenedor, Capacidad, Altura, Longitud, Ancho);
+            }
+            public int NumeroContenedor { get; set; }
+            public double Capacidad { get; set; }
+            public double Altura { get; set; }
+            public double Longitud { get; set; }
+            public double Ancho { get; set; }
+            public bool TieneLugarParaUltimaCaja { get; set; } = true;
 
-        public List<Caja> cajas = new List<Caja>();
+            public List<Caja> cajas = new List<Caja>();
+        }
+
     }
-
 }

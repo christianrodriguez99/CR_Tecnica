@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyectos\\CR_Tecnica\\CR_Geminus\\CR_Geminus.csproj",
+      "projectUniqueName": "C:\\Proyectos\\Jeje\\CR_Tecnica\\CR_Geminus\\CR_Geminus.csproj",
       "projectName": "CR_Geminus",
-      "projectPath": "C:\\Proyectos\\CR_Tecnica\\CR_Geminus\\CR_Geminus.csproj",
+      "projectPath": "C:\\Proyectos\\Jeje\\CR_Tecnica\\CR_Geminus\\CR_Geminus.csproj",
       "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyectos\\CR_Tecnica\\CR_Geminus\\obj\\",
+      "outputPath": "C:\\Proyectos\\Jeje\\CR_Tecnica\\CR_Geminus\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
