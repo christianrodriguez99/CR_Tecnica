@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chris\\source\\repos\\CR_Geminus\\CR_Geminus\\CR_Geminus.csproj",
+      "projectUniqueName": "C:\\Proyectos\\CR_Tecnica\\CR_Geminus\\CR_Geminus.csproj",
       "projectName": "CR_Geminus",
-      "projectPath": "C:\\Users\\chris\\source\\repos\\CR_Geminus\\CR_Geminus\\CR_Geminus.csproj",
+      "projectPath": "C:\\Proyectos\\CR_Tecnica\\CR_Geminus\\CR_Geminus.csproj",
       "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chris\\source\\repos\\CR_Geminus\\CR_Geminus\\obj\\",
+      "outputPath": "C:\\Proyectos\\CR_Tecnica\\CR_Geminus\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
